@@ -1,0 +1,61 @@
+:root {
+  --bg: #0b0d12;
+  --panel: rgba(255, 255, 255, 0.06);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.66);
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: rgba(0, 0, 0, 0.35) 0 18px 50px -20px;
+  --accent: #a78bfa;
+  --input: rgba(255, 255, 255, 0.06);
+  --btn: rgba(255, 255, 255, 0.09);
+  --chip: rgba(255, 255, 255, 0.07);
+
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  line-height: 1.45;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html[data-theme='light'] {
+  --bg: #f7f7fb;
+  --panel: #ffffff;
+  --text: rgba(12, 12, 18, 0.92);
+  --muted: rgba(12, 12, 18, 0.62);
+  --border: rgba(12, 12, 18, 0.12);
+  --shadow: rgba(0, 0, 0, 0.08) 0 18px 50px -20px;
+  --accent: #6d28d9;
+  --input: rgba(12, 12, 18, 0.04);
+  --btn: rgba(12, 12, 18, 0.05);
+  --chip: rgba(12, 12, 18, 0.04);
+}
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1200px 600px at 10% -10%, rgba(167, 139, 250, 0.25), transparent 50%),
+    radial-gradient(900px 500px at 90% 10%, rgba(99, 102, 241, 0.18), transparent 55%),
+    var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2 {
+  color: var(--text);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', monospace;
+}
